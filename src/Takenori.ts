@@ -2,7 +2,6 @@ import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 export default class Takenori extends THREE.Group {
-
   cap: THREE.Object3D | undefined;
   head: THREE.Object3D | undefined;
   nose: THREE.Object3D | undefined;
@@ -33,7 +32,6 @@ export default class Takenori extends THREE.Group {
       this.glassFrame = this.getObjectByName('glassFrame');
       this.yellowCap = this.getObjectByName('yellowCap');
       (this.yellowCap as THREE.Object3D).visible = false;
-
       (this.glassL as THREE.Object3D).userData.initialPosition = (this.glassL as THREE.Object3D).position.clone();
       (this.glassR as THREE.Object3D).userData.initialPosition = (this.glassR as THREE.Object3D).position.clone();
       (this.glassFrame as THREE.Object3D).userData.initialPosition = (this.glassFrame as THREE.Object3D).position.clone();
@@ -45,8 +43,6 @@ export default class Takenori extends THREE.Group {
           child.userData.initialMaterial = (child.material as THREE.Material).clone();
         }
       });
-
     });
   }
-
 }

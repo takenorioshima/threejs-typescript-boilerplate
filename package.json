@@ -11,9 +11,20 @@
     "es2015"
   ],
   "scripts": {
+    "build": "yarn clean && yarn transpile && yarn copy",
+    "transpile": "esbuild src/main.ts --bundle --minify --outdir=dist ",
+    "clean": "rimraf dist/",
+    "copy": "copyfiles -u 1 src/**/*.html dist/",
+    "server": "http-server dist/",
+    "watch": "nodemon --watch src --ext ts --exec \"yarn build && yarn server\""
   },
   "devDependencies": {
     "@types/three": "^0.140.0",
+    "copyfiles": "^2.4.1",
+    "esbuild": "^0.15.15",
+    "http-server": "^14.1.1",
+    "nodemon": "^2.0.20",
+    "rimraf": "^3.0.2",
     "three": "^0.140.2",
     "typescript": "^4.6.4"
   },

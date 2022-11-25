@@ -14,7 +14,7 @@
     "build": "yarn clean && yarn transpile && yarn copy",
     "transpile": "esbuild src/main.ts --bundle --minify --outdir=dist ",
     "clean": "rimraf dist/",
-    "copy": "copyfiles -u 1 src/**/*.html dist/",
+    "copy": "copyfiles -u 1 src/**/*.html src/**/*.glb dist/",
     "server": "http-server dist/",
     "watch": "nodemon --watch src --ext ts --exec \"yarn build && yarn server\""
   },

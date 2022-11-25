@@ -18,7 +18,7 @@ export default class Takenori extends THREE.Group {
 
     const loader = new GLTFLoader();
 
-    this.name = 'take';
+    this.name = 'takenori';
 
     loader.load('./models/Takenori.glb', (gltf) => {
       this.add(gltf.scene);

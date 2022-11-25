@@ -1,4 +1,5 @@
 import * as THREE from "three";
+import Stats from 'three/examples/jsm/libs/stats.module.js'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import Takenori from './Takenori';
 
@@ -6,6 +7,9 @@ const scene = new THREE.Scene();
 scene.background = new THREE.Color( 0xffcf00 );
 
 const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+const stats = Stats();
+document.body.appendChild(stats.dom);
 
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -39,6 +43,7 @@ const tick = (): void => {
     takenori.rotation.y += -0.01;
     takenori.rotation.z += -0.01;
 
+    stats.update();
     controls.update();
 }
 tick();

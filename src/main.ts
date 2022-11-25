@@ -21,8 +21,8 @@ camera.position.z = 5;
 const tick = (): void => {
     requestAnimationFrame(tick);
 
-    cube.rotation.x += -0.02;
-    cube.rotation.y += -0.02;
+    cube.rotation.x += -0.2;
+    cube.rotation.y += -0.2;
 
     renderer.render(scene, camera);
 

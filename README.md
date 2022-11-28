@@ -2,18 +2,18 @@
 Three.js boilerplate with TypeScript and esbuild.
 
 ## Useage
-### Clone this repository to your local project directory.
+### Clone this repository to your local project directory
 ```
 % git https://github.com/takenorioshima/threejs-typescript-boilerplate my-threejs-project
 % cd my-threejs-project
 ```
 
-### Install npm packages with yarn.
+### Install npm packages with yarn
 ```
 % yarn install
 ```
 
-### Transpile source code.
+### Transpile source code
 ```
 % yarn build
 ```

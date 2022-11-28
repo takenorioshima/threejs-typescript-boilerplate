@@ -1,6 +1,8 @@
 # threejs-typescript-boilerplate
 Three.js boilerplate with TypeScript and esbuild.
 
+![Screen Shot 2022-11-28 at 12 54 49](https://user-images.githubusercontent.com/707610/204190707-cd84f180-ac59-465d-abe5-509711d63de1.png)
+
 ## Useage
 ### Clone this repository to your local project directory
 ```

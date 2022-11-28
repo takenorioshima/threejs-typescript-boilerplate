@@ -25,4 +25,4 @@ Three.js boilerplate with TypeScript and esbuild.
 Browser will open automatically and you can see rotating 3D model.
 
 ## Development
-Edit `src/main.ts`, then `% yarn build`. Watch(build on save) is also available with `% yarn watch`.
+Edit `src/main.ts`, then `% yarn build`. Watch option(build on save) is also available with `% yarn watch`.
